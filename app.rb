@@ -2,13 +2,13 @@
 require 'sinatra'
 
 get '/' do
-
-	"Bem vindo. Digite <a href='/ola'>Clique aqui</a>"
 	
+	erb :index
+
 end
 
 get '/ola' do
 
-	"Olá mundo"
-
+	erb :ola
+	
 end
